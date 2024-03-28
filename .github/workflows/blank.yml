@@ -1,0 +1,246 @@
+aLink
+: 
+""
+accessKey
+: 
+""
+attributeStyleMap
+: 
+StylePropertyMap {size: 0}
+attributes
+: 
+NamedNodeMap {length: 0}
+autocapitalize
+: 
+""
+autofocus
+: 
+false
+background
+: 
+""
+baseURI
+: 
+"https://phamvulinh18.github.io/crushne/"
+bgColor
+: 
+""
+childElementCount
+: 
+2
+childNodes
+: 
+NodeList(5) [text, div.wrapper, text, script, text]
+children
+: 
+HTMLCollection(2) [div.wrapper, script]
+classList
+: 
+DOMTokenList [value: '']
+className
+: 
+""
+clientHeight
+: 
+993
+clientLeft
+: 
+0
+clientTop
+: 
+0
+clientWidth
+: 
+1365
+contentEditable
+: 
+"inherit"
+dataset
+: 
+DOMStringMap {}
+dir
+: 
+""
+draggable
+: 
+false
+elementTiming
+: 
+""
+enterKeyHint
+: 
+""
+firstChild
+: 
+text
+firstElementChild
+: 
+div.wrapper
+hidden
+: 
+false
+id
+: 
+""
+inert
+: 
+false
+innerHTML
+: 
+"\n    <div class=\"wrapper\">\n        <h2 class=\"question\">Anh còn iu em nữaaa hongg👉👈</h2>\n        <h4 class=\"question-prompt\">Nếu anh không chọn hoặc thoát là anhh ghét emm</h4>\n        <img class=\"gif\" alt=\"gif\" src=\"https://media.giphy.com/media/PcCh9x9Pz5d2CriuMQ/giphy.gif\">\n        <div class=\"btn-group\">\n            <button class=\"yes-btn\">Không iu emm😠</button>\n            <button class=\"no-btn\">có iuu em😽</button>\n        </div>\n    </div>\n    <script src=\"script.js\"></script>\n\n"
+innerText
+: 
+"Anh còn iu em nữaaa hongg👉👈\nNếu anh không chọn hoặc thoát là anhh ghét emm\nKhông iu emm😠\ncó iuu em😽"
+inputMode
+: 
+""
+isConnected
+: 
+true
+isContentEditable
+: 
+false
+lang
+: 
+""
+lastChild
+: 
+text
+lastElementChild
+: 
+script
+link
+: 
+""
+localName
+: 
+"body"
+namespaceURI
+: 
+"http://www.w3.org/1999/xhtml"
+nodeName
+: 
+"BODY"
+nodeType
+: 
+1
+nonce
+: 
+""
+offsetHeight
+: 
+993
+offsetLeft
+: 
+0
+offsetTop
+: 
+0
+offsetWidth
+: 
+1365
+outerHTML
+: 
+"<body>\n    <div class=\"wrapper\">\n        <h2 class=\"question\">Anh còn iu em nữaaa hongg👉👈</h2>\n        <h4 class=\"question-prompt\">Nếu anh không chọn hoặc thoát là anhh ghét emm</h4>\n        <img class=\"gif\" alt=\"gif\" src=\"https://media.giphy.com/media/PcCh9x9Pz5d2CriuMQ/giphy.gif\">\n        <div class=\"btn-group\">\n            <button class=\"yes-btn\">Không iu emm😠</button>\n            <button class=\"no-btn\">có iuu em😽</button>\n        </div>\n    </div>\n    <script src=\"script.js\"></script>\n\n</body>"
+outerText
+: 
+"Anh còn iu em nữaaa hongg👉👈\nNếu anh không chọn hoặc thoát là anhh ghét emm\nKhông iu emm😠\ncó iuu em😽"
+ownerDocument
+: 
+document
+parentElement
+: 
+html
+parentNode
+: 
+html
+part
+: 
+DOMTokenList [value: '']
+previousElementSibling
+: 
+head
+previousSibling
+: 
+text
+scrollHeight
+: 
+993
+scrollLeft
+: 
+0
+scrollTop
+: 
+0
+scrollWidth
+: 
+1365
+slot
+: 
+""
+spellcheck
+: 
+true
+style
+: 
+CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}
+tabIndex
+: 
+-1
+tagName
+: 
+"BODY"
+text
+: 
+""
+textContent
+: 
+"\n    \n        Anh còn iu em nữaaa hongg👉👈\n        Nếu anh không chọn hoặc thoát là anhh ghét emm\n        \n        \n            Không iu emm😠\n            có iuu em😽\n        \n    \n    \n\n"
+title
+: 
+""
+translate
+: 
+true
+vLink
+: 
+""
+virtualKeyboardPolicy
+: 
+""
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
